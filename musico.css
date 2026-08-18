@@ -1,0 +1,622 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+
+/* =================================
+   FIRST SIDEBAR - MENU
+================================= */
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+
+    background-color: #000000;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 25px 18px;
+
+    z-index: 10;
+}
+
+/* Music logo */
+
+.sidebar:first-child h1 {
+    color: #1db954;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+/* Menu heading */
+
+.sidebar:first-child h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Menu links */
+
+.sidebar:first-child a {
+    display: block;
+
+    color: #b3b3b3;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    padding: 12px 0;
+
+    transition: 0.3s;
+}
+
+/* Menu hover */
+
+.sidebar:first-child a:hover {
+    color: #1db954;
+}
+
+
+/* =================================
+   SECOND SIDEBAR - PLAYLIST
+================================= */
+
+.sidebar:nth-child(2) {
+    position: fixed;
+
+    left: 0;
+    top: 310px;
+
+    width: 220px;
+
+    height: auto;
+
+    padding: 0 18px;
+
+    background-color: #000000;
+
+    z-index: 11;
+}
+
+/* Playlist heading */
+
+.sidebar:nth-child(2) h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+/* Playlist links */
+
+.sidebar:nth-child(2) a {
+    display: block;
+
+    color: #b3b3b3;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    padding: 12px 0;
+
+    transition: 0.3s;
+}
+
+/* Playlist hover */
+
+.sidebar:nth-child(2) a:hover {
+    color: #1db954;
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+.Main {
+    margin-left: 220px;
+
+    min-height: 100vh;
+
+    padding: 22px 40px 60px;
+
+    background: linear-gradient(
+        to bottom,
+        #242424,
+        #181818,
+        #121212
+    );
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.header input {
+    width: 480px;
+
+    height: 55px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 30px;
+
+    background-color: #ffffff;
+
+    color: #222222;
+
+    font-size: 17px;
+}
+
+.header input::placeholder {
+    color: #777777;
+}
+
+
+/* =================================
+   USER NAME
+================================= */
+
+.name {
+    position: absolute;
+
+    top: 30px;
+
+    right: 45px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   WELCOME SECTION
+================================= */
+
+.Main > div > p {
+    color: #b3b3b3;
+
+    font-size: 18px;
+
+    margin: 8px 0;
+}
+
+.Main > div > h2 {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    margin: 15px 0;
+}
+
+
+/* =================================
+   RECENTLY PLAYED HEADING
+================================= */
+
+.Main > h1 {
+    color: #ffffff;
+
+    font-size: 40px;
+
+    margin-top: 35px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =================================
+   MUSIC ROW
+================================= */
+
+.music {
+    display: flex;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =================================
+   SONG CARDS
+================================= */
+
+.mania {
+    width: 220px;
+
+    min-height: 430px;
+
+    padding: 18px;
+
+    background-color: #181818;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* Card hover */
+
+.mania:hover {
+    background-color: #282828;
+
+    transform: translateY(-5px);
+}
+
+
+/* =================================
+   SONG IMAGES
+================================= */
+
+.mania img {
+    width: 184px;
+
+    height: 184px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   SONG TITLE
+================================= */
+
+.mania h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =================================
+   ARTIST
+================================= */
+
+.mania p {
+    color: #b3b3b3;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =================================
+   PLAY BUTTON
+================================= */
+
+button {
+    background-color: #1db954;
+
+    color: #000000;
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 8px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1ed760;
+
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   RECOMMENDED FOR YOU
+================================= */
+
+.Main h2 {
+    color: #ffffff;
+
+    font-size: 28px;
+
+    margin-top: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =================================
+   RECOMMENDED SONG CARDS
+================================= */
+
+.Songs {
+    width: 210px;
+
+    min-height: 390px;
+
+    padding: 18px;
+
+    background-color: #181818;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.Songs:hover {
+    background-color: #282828;
+
+    transform: translateY(-5px);
+}
+
+
+/* Recommended images */
+
+.Songs img {
+    width: 174px;
+
+    height: 174px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Recommended title */
+
+.Songs h3 {
+    color: #ffffff;
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Recommended artist */
+
+.Songs p {
+    color: #b3b3b3;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   POPULAR ARTISTS
+================================= */
+
+/*
+Your HTML:
+<div class="Your favourite artist">
+
+This means three classes:
+Your
+favourite
+artist
+*/
+
+.Your {
+    display: flex;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+
+/* Artist card */
+
+.Your > div {
+    width: 170px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #181818;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.Your > div:hover {
+    background-color: #282828;
+
+    transform: translateY(-5px);
+}
+
+
+/* Artist image */
+
+.Your img {
+    width: 135px;
+
+    height: 135px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 12px;
+}
+
+
+/* Artist name */
+
+.Your h3 {
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444444;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666666;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 1200px) {
+
+    .Main {
+        padding: 22px 25px;
+    }
+
+    .mania {
+        width: 200px;
+    }
+
+    .mania img {
+        width: 164px;
+        height: 164px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .sidebar:nth-child(2) {
+        width: 180px;
+    }
+
+    .Main {
+        margin-left: 180px;
+        padding: 20px;
+    }
+
+    .header input {
+        width: 350px;
+    }
+
+    .name {
+        right: 20px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .sidebar:nth-child(2) {
+        position: relative;
+
+        top: 0;
+
+        width: 100%;
+
+        padding: 20px 18px;
+    }
+
+    .Main {
+        margin-left: 0;
+    }
+
+    .sidebar a {
+        display: inline-block;
+
+        margin-right: 20px;
+    }
+
+    .header input {
+        width: 100%;
+    }
+
+    .name {
+        position: static;
+
+        margin-bottom: 20px;
+    }
+
+    .music {
+        justify-content: center;
+    }
+}
