@@ -178,16 +178,23 @@ body {
 
 .name {
     position: absolute;
-
     top: 30px;
+    right: 40px;
 
-    right: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    color: #ffffff;
-
-    font-size: 22px;
-
+    color: white;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.name img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
