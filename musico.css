@@ -64,7 +64,7 @@ body {
 
 /* Menu hover */
 
-.sidebar:first-child a:hover {
+.sidebar a:hover {
     color: #1db954;
 }
 
